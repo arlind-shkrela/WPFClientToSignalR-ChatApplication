@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfClientApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfClientApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label  Content="User" HorizontalAlignment="Left" Margin="71,63,0,0" VerticalAlignment="Top"/>
+        <Label  Content="Message" HorizontalAlignment="Left" Margin="71,93,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.296,-0.841"/>
+        <TextBox Name="userName" HorizontalAlignment="Left" Height="25" Margin="132,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <TextBox Name="userMessage" HorizontalAlignment="Left" Height="25" Margin="132,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <Button x:Name="sendButton" Content="Send Message" HorizontalAlignment="Left" Height="23" Margin="132,137,0,0" VerticalAlignment="Top" Width="175" Click="Button_Click_SendMessage"/>
+        <ListBox x:Name="messageList" HorizontalAlignment="Left" Height="204" Margin="132,197,0,0" VerticalAlignment="Top" Width="561"/>
+        <Label Content="Notification List" HorizontalAlignment="Left" Height="25" Margin="26,197,0,0" VerticalAlignment="Top" Width="101"/>
+        <Button x:Name="connectButton" Content="Connect" HorizontalAlignment="Left" Margin="363,23,0,0" VerticalAlignment="Top" Width="81" Height="23" Click="Button_Click_Connect"/>
+        <Label Content="User" HorizontalAlignment="Left" Height="25" Margin="445,63,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="File" HorizontalAlignment="Left" Margin="445,93,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.586,0.736" Width="60"/>
+        <TextBox x:Name="userName2" HorizontalAlignment="Left" Height="23" Margin="510,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="183"/>
+        <TextBox x:Name="filePath" HorizontalAlignment="Left" Height="23" Margin="510,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="183"/>
+        <Button Content="Send File" HorizontalAlignment="Left" Margin="510,137,0,0" VerticalAlignment="Top" Width="183" RenderTransformOrigin="0.525,-0.927" Height="23" Click="Button_Click_SendFile"/>
+        <Button Content="Select" HorizontalAlignment="Left" Margin="708,95,0,0" VerticalAlignment="Top" Width="62" RenderTransformOrigin="0.289,-0.245" Click="Button_Click_SelectFilePath" Height="23"/>
+
+    </Grid>
+</Window>
